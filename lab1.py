@@ -67,12 +67,16 @@ def collatz_seq(n):
     print("Chain length: ", suma_n, "\n")
 
 
+# Collatz Sequence
+############################################################################################
 collatz_seq(13)
 collatz_seq(999)  # under 1,000
 collatz_seq(999999)  # under 1,000,000
 print("6#")
 
 
+# Fahrenheit-to-Celsius converter
+############################################################################################
 farenheit = input("Temperature F?: ")
 farenheit = float(farenheit)
 celcius = round((farenheit - 32)*(5/9), 2)
