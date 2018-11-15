@@ -220,3 +220,17 @@ print(is_cyclone_phrase(""))  # => True
             or
         id_y = id_x - 1
 """
+
+
+# Pascal's Triangle
+# Write a function that generates the next level of Pascal's triangle given a list that represents a valid row of Pascal’s triangle.
+########################################################################################################
+
+print("\n\nPascal's Triangle")
+print("-------------------------------------------------------------")
+
+def generate_pascal_row(row):
+    l_zero = [0] + row
+    r_zero = row + [0]
+    return [x + y for x, y in zip(l_zero, r_zero)]
+print(list(generate_pascal_row([1,2,1])))
